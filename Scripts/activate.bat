@@ -1,6 +1,6 @@
 @echo off
 
-set "VIRTUAL_ENV=D:\Envs\lanlan"
+set "VIRTUAL_ENV=D:\work_on_home\lanlan"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"
