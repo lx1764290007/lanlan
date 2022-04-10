@@ -8,8 +8,7 @@ class SignIn(db.Model):
     # 定义字段
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     last_sign_in = db.Column(db.Integer, unique=True)
-    boy = db.Column(db.Integer)
-    girl = db.Column(db.Integer)
+    sign_user = db.Column(db.String(255))
 
     def __repr__(self):
         return 'Course:%s' % self.name

@@ -12,9 +12,9 @@ def get_info(token):
 
 
 # 执行签到
-@app.route('/sign-in', methods=['POST'])
-def sign_in():
-    return Sig.sign_in()
+@app.route('/sign-in/<token>', methods=['POST'])
+def sign_in(token):
+    return Sig.sign_in(token)
 
 
 # 签到历史列表 - 性别

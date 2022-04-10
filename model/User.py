@@ -15,6 +15,6 @@ def db_handle(phone, token):
         data = User.query.filter_by(phone=phone).first()
         res = {
             'data': data,
-            'users': User.query.all()
+            'partner': User.query.filter_by(phone != phone).first()
         }
         return json.dumps(res, default=to_json)
